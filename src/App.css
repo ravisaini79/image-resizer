@@ -1,38 +1,182 @@
-.App {
+.app-container {
+  text-align: center;
+  padding: 20px;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+main {
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+.upload-container {
+  border: 2px dashed #0096ff;
+  padding: 40px;
+  margin: 80px;
+  background-color: #f9f9f9;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.upload-container p {
+  font-size: 1.2rem;
+  color: #333;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.upload-container span {
+  color: #0096ff;
+  cursor: pointer;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.upload-container button {
+  background-color: #0096ff;
   color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.upload-container button:hover {
+  background-color: #007acc;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.resizer-container {
+  background-color: #f9f9f9;
+  padding: 50px;
+  margin: 100px;
+  border-radius: 8px;
+  text-align: left;
 }
+
+.resizer-container h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form-group div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+button {
+  width: 100%;
+  padding: 15px;
+  background-color: #0096ff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* button:hover {
+  background-color: #007acc;
+} */
+
+
+.resizer-container {
+  position: relative;
+  padding: 20px;
+}
+
+.back-button {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #f0f0f0;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+.back-button:hover {
+  background-color: #ddd;
+}
+.footer {
+  padding: 40px 0;
+  /* background-color:rgba(var(--bs-light-rgb), var(--bs-bg-opacity)) !important;; */
+  color: rgb(16, 14, 14);
+}
+
+.footer ul {
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+.footer li {
+  display: inline-block; /* Change to inline-block for horizontal layout */
+  padding: 0 10px;
+}
+
+.footer ul a {
+  color: inherit;
+  text-decoration: none;
+  opacity: 0.8;
+}
+
+.footer ul a:hover {
+  opacity: 1;
+}
+
+.footer .social {
+  text-align: center;
+  padding-bottom: 25px;
+}
+
+.footer .social > a {
+  font-size: 24px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  margin: 0 8px;
+  color: inherit;
+  opacity: 0.75;
+}
+
+.footer .social > a:hover {
+  opacity: 0.9;
+}
+
+.footer .copyright {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 13px;
+  color: #aaa;
+  margin-bottom: 0;
+}
+.footer .footer-break{
+height:2px;
+border-width:0;
+color:gray;
+background-color:white
+  }
